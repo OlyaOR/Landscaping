@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue Cyr', sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0px auto;
+}
+header {
+    background: url('img/background/background_header.png') top/cover no-repeat;
+    height: 870px;
+    padding-top: 18px;
+}
+.logo {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+nav {
+    position: relative;
+    top: -250px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 590px;
+    margin: 0 auto;
+}
+.menu li {
+    display: block;
+    padding: 8px;
+}
+.menu li:hover {
+    background-color: #e46107;
+    border-radius: 5px;
+}
+.menu_link {
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+.menu_link:hover {
+    display: block; 
+}
+.main {
+    position: relative;
+    top: -150px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.main_title {
+    font-size: 68px;
+    line-height: 60px;
+    font-weight: 900;
+    text-shadow: 0px 0px 6px rgba(31,88,0,0.75);
+    color: #f1f2f5;
+    margin-bottom: 20px;
+}
+.main_info {
+    text-align: center;
+    width: 960px;
+    height: 180px;
+    opacity: 0.7;
+    background-color: #26311c;
+    border-radius: 5px;
+    padding: 29px 45px 35px 45px;
+}
+.main_subtitle {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #f1f2f5;
+    margin-bottom: 20px;
+}
+.divisor {
+    width: 100%;
+    height: 4px;
+    background-color: #e46107;
+}
+main {
+    background-color: #26311c;
+    max-height: 680px;
+}
+.learn_more {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    top: -103px;
+}
+.learn_more_item {
+    margin-left: 125px;
+}
+.learn_more_item:first-child, .learn_more_item:nth-child(4) {
+    margin-left: 0px;
+}
+.learn_more_item:nth-child(4), .learn_more_item:nth-child(5) {
+    margin-top: 29px;
+    padding-bottom: 50px;
+}
+.learn_more_item h3 {
+    font-size: 34px;
+    font-weight: 300;
+    color: #f1f2f5;
+    margin-bottom: 15px;
+}
+.learn_more_img {
+    width: 200px;
+    height: 200px;
+    border: 8px solid #ffff;
+    border-radius: 100%;
+    margin-bottom: 33px;
+}
+.learn_more_item button {
+    width: 168px;
+    height: 60px;
+    background-color: #26311c;
+    border: 2px solid #a1ad97;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.learn_more_item button:hover {
+    cursor: pointer;
+    border-color: #8dc705;
+    color: #8dc705;
+}
+.benefits {
+    background: url('img/background/background_benefits.png') top/cover no-repeat;
+    min-height: 560px;
+    padding: 82px 0 95px 0;
+}
+.benefits_info {
+    width: 400px;
+}
+.benefits_info h3 {
+    font-size: 34px;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.benefits_info h3 span{
+    font-size: 54px;
+    font-weight: 700;
+    color: #48890a;
+}
+.benefits_text {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 23px;
+}
+.benefits_info button{
+    width: 168px;
+    height: 60px;
+    background-color: rgba(38,49,28,0.0);
+    border: 2px solid #48890a;
+    border-radius: 5px;
+    font-size: 19px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #48890a;
+}
+.benefits_info button:hover {
+    cursor: pointer;
+    border-color: #e46107;
+    color: #e46107;
+}
+.second_divisor {
+    width: 100%;
+    height: 4px;
+    background-color: #7da83c;
+}
+.footer_links{
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 590px;
+    margin: 0 auto;
+    align-items: center;
+}
+.footer_link {
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7b7b7b;
+    text-decoration: none;
+}
+.footer_link:hover {
+    color: #8dc705;
+}
+.footer_info {
+    height: 65px;
+    padding: 0 30px;
+    background-color: #e4e4e4;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #919191;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
