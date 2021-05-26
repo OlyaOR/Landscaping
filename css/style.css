@@ -4,13 +4,12 @@
     padding: 0;
     font-family: 'Helvetica Neue Cyr', sans-serif;
 }
-
 .container {
     width: 960px;
     margin: 0px auto;
 }
 header {
-    background: url('img/background/background_header.png') top/cover no-repeat;
+    background: url('../img/background/background_header.png') top/cover no-repeat;
     height: 870px;
     padding-top: 18px;
 }
@@ -46,7 +45,7 @@ nav {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
-
+    font-family: 'Nimbus San T Con', sans-serif;
 }
 .menu_link:hover {
     display: block; 
@@ -55,11 +54,6 @@ nav {
     position: relative;
     top: -150px;
     text-align: center;
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #ffffff;
 }
 .main_title {
     font-size: 68px;
@@ -72,11 +66,12 @@ nav {
 .main_info {
     text-align: center;
     width: 960px;
-    height: 180px;
+    min-height: 180px;
     opacity: 0.7;
     background-color: #26311c;
     border-radius: 5px;
     padding: 29px 45px 35px 45px;
+    margin: 0 auto;
 }
 .main_subtitle {
     font-size: 34px;
@@ -84,6 +79,13 @@ nav {
     font-weight: 300;
     color: #f1f2f5;
     margin-bottom: 20px;
+}
+.main_text {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
 }
 .divisor {
     width: 100%;
@@ -142,7 +144,7 @@ main {
     color: #8dc705;
 }
 .benefits {
-    background: url('img/background/background_benefits.png') top/cover no-repeat;
+    background: url('../img/background/background_benefits.png') top/cover no-repeat;
     min-height: 560px;
     padding: 82px 0 95px 0;
 }
@@ -161,7 +163,7 @@ main {
     color: #48890a;
 }
 .benefits_text {
-    font-family: Arial;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     line-height: 25px;
     font-weight: 400;
@@ -191,7 +193,7 @@ main {
     background-color: #7da83c;
 }
 .footer_links{
-    height: 63px;
+    min-height: 63px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -214,7 +216,7 @@ main {
     height: 65px;
     padding: 0 30px;
     background-color: #e4e4e4;
-    font-family: Arial;
+    font-family: 'Arial', sans-serif;
     font-size: 12px;
     line-height: 20px;
     font-weight: 400;
