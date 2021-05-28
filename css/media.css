@@ -106,12 +106,8 @@
     .main_info {
         padding: 15px;
     }
-    .footer_link {
-        font-size: 15px;
-        line-height: 25px;
-    }
     .footer_links {
-        width: 100%;
+        width: 80%;
         flex-wrap: wrap;
         justify-content: space-around;
     }

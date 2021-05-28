@@ -218,7 +218,7 @@ main {
     color: #7b7b7b;
     text-decoration: none;
     font-family: 'NimbusSanTCon-Bold', sans-serif;
-    padding-right: 10px;;
+    padding: 0 20px;
 }
 .footer_link:hover {
     color: #8dc705;
