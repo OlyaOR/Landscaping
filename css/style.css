@@ -20,10 +20,13 @@ header {
     padding-top: 18px;
 }
 .logo {
-    display: block;
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 nav {
     position: relative;
@@ -200,7 +203,8 @@ main {
 .footer_links {
     min-height: 63px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     list-style-type: none;
     width: 590px;
     margin: 0 auto;
@@ -214,6 +218,7 @@ main {
     color: #7b7b7b;
     text-decoration: none;
     font-family: 'NimbusSanTCon-Bold', sans-serif;
+    padding-right: 10px;;
 }
 .footer_link:hover {
     color: #8dc705;
