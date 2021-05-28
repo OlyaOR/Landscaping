@@ -29,6 +29,9 @@ nav {
     position: relative;
     top: 190px;
 }
+.hamburger {
+    display: none
+}
 .menu {
     display: flex;
     justify-content: space-between;
