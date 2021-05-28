@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "NimbusSanTCon-Bold";
+    src: url("../fonts/NimbusSansBeckerTConBold.ttf") format("truetype"),
+           url("../fonts/NimbusSansBeckerTConBold.ttf") format("truetype");
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,20 +20,21 @@ header {
     padding-top: 18px;
 }
 .logo {
-    width: 1200px;
     display: block;
-    margin: 0 auto;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
 }
 nav {
     position: relative;
-    top: -250px;
+    top: 190px;
 }
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    width: 590px;
+    width: 550px;
     margin: 0 auto;
 }
 .menu li {
@@ -39,20 +46,20 @@ nav {
     border-radius: 5px;
 }
 .menu_link {
-    font-size: 15px;
+    font-size: 19px;
     line-height: 40px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
-    font-family: 'Nimbus San T Con', sans-serif;
+    font-family: 'NimbusSanTCon-Bold', sans-serif;
 }
 .menu_link:hover {
     display: block; 
 }
 .main {
     position: relative;
-    top: -150px;
+    top: 270px;
     text-align: center;
 }
 .main_title {
@@ -65,7 +72,6 @@ nav {
 }
 .main_info {
     text-align: center;
-    width: 960px;
     min-height: 180px;
     opacity: 0.7;
     background-color: #26311c;
@@ -94,7 +100,7 @@ nav {
 }
 main {
     background-color: #26311c;
-    max-height: 680px;
+    min-height: 680px;
 }
 .learn_more {
     position: relative;
@@ -102,17 +108,11 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    top: -103px;
+    top: -145px;
 }
 .learn_more_item {
-    margin-left: 125px;
-}
-.learn_more_item:first-child, .learn_more_item:nth-child(4) {
-    margin-left: 0px;
-}
-.learn_more_item:nth-child(4), .learn_more_item:nth-child(5) {
-    margin-top: 29px;
-    padding-bottom: 50px;
+    margin-top: 30px;
+    padding: 0 50px;
 }
 .learn_more_item h3 {
     font-size: 34px;
@@ -121,8 +121,8 @@ main {
     margin-bottom: 15px;
 }
 .learn_more_img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border: 8px solid #ffff;
     border-radius: 100%;
     margin-bottom: 33px;
@@ -137,6 +137,7 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+    font-family: 'NimbusSanTCon-Bold', sans-serif;
 }
 .learn_more_item button:hover {
     cursor: pointer;
@@ -181,6 +182,7 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     color: #48890a;
+    font-family: 'NimbusSanTCon-Bold', sans-serif;
 }
 .benefits_info button:hover {
     cursor: pointer;
@@ -192,7 +194,7 @@ main {
     height: 4px;
     background-color: #7da83c;
 }
-.footer_links{
+.footer_links {
     min-height: 63px;
     display: flex;
     justify-content: space-between;
@@ -202,19 +204,19 @@ main {
     align-items: center;
 }
 .footer_link {
-    font-size: 15px;
+    font-size: 19px;
     line-height: 40px;
     font-weight: 700;
     text-transform: uppercase;
     color: #7b7b7b;
     text-decoration: none;
+    font-family: 'NimbusSanTCon-Bold', sans-serif;
 }
 .footer_link:hover {
     color: #8dc705;
 }
 .footer_info {
     height: 65px;
-    padding: 0 30px;
     background-color: #e4e4e4;
     font-family: 'Arial', sans-serif;
     font-size: 12px;
@@ -222,7 +224,7 @@ main {
     font-weight: 400;
     color: #919191;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .hidden {
