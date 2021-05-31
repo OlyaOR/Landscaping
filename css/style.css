@@ -19,7 +19,7 @@ header {
     height: 870px;
     padding-top: 18px;
 }
-.logo {
+.logo, .ellipse {
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
@@ -28,40 +28,44 @@ header {
     display: flex;
     justify-content: center;
 }
-nav {
-    position: relative;
-    top: 190px;
+.ellipse {
+    z-index: 2;
+    top: 188px;
 }
 .hamburger {
     display: none
 }
 .menu {
+    position: relative;
+    top: 177px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     list-style-type: none;
-    width: 550px;
+    width: 590px;
     margin: 0 auto;
-}
-.menu li {
-    display: block;
-    padding: 8px;
-}
-.menu li:hover {
-    background-color: #e46107;
-    border-radius: 5px;
 }
 .menu_link {
     font-size: 19px;
-    line-height: 40px;
+    line-height: 20px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
     font-family: 'NimbusSanTCon-Bold', sans-serif;
 }
-.menu_link:hover {
-    display: block; 
+.menu li {
+    padding: 20px;
+}
+.menu li:first-child {
+    clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+}
+.menu li:last-child {
+    clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
+}
+.menu li:hover {
+    background-color: #e46107;
+    border-radius: 5px;
 }
 .main {
     position: relative;
@@ -78,7 +82,7 @@ nav {
 }
 .main_info {
     text-align: center;
-    min-height: 180px;
+    min-height: 190px;
     opacity: 0.7;
     background-color: #26311c;
     border-radius: 5px;
@@ -203,8 +207,6 @@ main {
 .footer_links {
     min-height: 63px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     list-style-type: none;
     width: 590px;
     margin: 0 auto;
@@ -212,7 +214,7 @@ main {
 }
 .footer_link {
     font-size: 19px;
-    line-height: 40px;
+    line-height: 25px;
     font-weight: 700;
     text-transform: uppercase;
     color: #7b7b7b;
@@ -228,7 +230,7 @@ main {
     background-color: #e4e4e4;
     font-family: 'Arial', sans-serif;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 40px;
     font-weight: 400;
     color: #919191;
     display: flex;
